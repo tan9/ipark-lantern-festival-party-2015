@@ -29,28 +29,70 @@
             document.getElementsByTagName( 'head' )[0].appendChild( link );
         </script>
 
-<style>
-    .reveal .slide-number {
-        position: absolute;
-        left: 20px;
-        top: 20px;
-        font-size: 2.5em;
-        opacity: 0.2;
-    }
+        <style>
+            .reveal {
+                background-color: firebrick;
+                color: gold;
+            }
 
-    .reveal .question {
-        font-size: 120px;
-    }
+            .reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6 {
+                font-family: "Noto Sans CJK TC";
+                text-transform: none;
+            }
 
-    .reveal .answer {
-        font-size: 120px;
-    }
+            .reveal .controls {
+                color: red;
+            }
 
-    .reveal {
-        background-color: firebrick;
-        color: gold;
-    }
-</style>
+            .reveal .controls div.navigate-left, .reveal .controls div.navigate-left.enabled {
+                border-right-color: red;
+            }
+
+            .reveal .controls div.navigate-right, .reveal .controls div.navigate-right.enabled {
+                border-left-color: red;
+            }
+
+            .reveal .controls div.navigate-up, .reveal .controls div.navigate-up.enabled {
+                border-bottom-color: red;
+            }
+
+            .reveal .controls div.navigate-down, .reveal .controls div.navigate-down.enabled {
+                border-top-color: red;
+            }
+
+            .reveal .slide-number {
+                position: absolute;
+                left: 20px;
+                top: 20px;
+                font-size: 2.5em;
+                color: red;
+            }
+
+            .reveal .question {
+                font-size: 2.5em;
+            }
+
+            .reveal .answer {
+                font-size: 2.5em;
+            }
+
+            .reveal .hint {
+                color: peachPuff;
+            }
+
+            .reveal .age::before {
+                font-family: 'FontAwesome';
+                content: "\f1ae";
+                padding-right: 20px;
+            }
+
+            .reveal .age {
+                font-size: 1.8em;
+                text-align: left;
+                color: lightSalmon;
+            }
+        </style>
+
         <!--[if lt IE 9]>
         <script src="lib/js/html5shiv.js"></script>
         <![endif]-->
@@ -62,8 +104,39 @@
 
             <div class="slides">
                 <section>
-                    <h1>佳成公園 i-Park 社區</h1>
-                    <h3>2015 年元宵聯歡晚會</h3>
+                    <section>
+                        <h1>佳成公園 i-Park 社區</h1>
+                        <h2>2015 年元宵聯歡晚會</h2>
+                    </section>
+                    <section>
+                        <h2>遊戲規則</h2>
+                        <ol style="font-size: 60px">
+                            <li>請舉手搶答，等主持人叫到後再回答，讓其他人知道答案就不好啦！</li>
+                            <li>看到 <i class="fa fa-child" style="color: lightSalmon; font-size: larger;"></i> 代表有作答年齡，請誠實面對自己！</li>
+                            <li>答對題目的好鄰居請到領獎處領獎，同時填寫戶號及簽名。</li>
+                        </ol>
+                    </section>
+                </section>
+
+                <section>
+                    <section class="question-page">
+                        <div class="age">7</div>
+                        <div class="question">我們社區叫什麼名字？</div>
+                        <div class="hint">要答完整才算喔!</div>
+                    </section>
+                    <section class="answer-page">
+                        <div class="answer">佳成公園 i-Park 社區</div>
+                    </section>
+                </section>
+
+                <section>
+                    <section class="question-page">
+                        <div class="age">3</div>
+                        <div class="question">我們社區今年幾歲？</div>
+                    </section>
+                    <section class="answer-page">
+                        <div class="answer">2 歲</div>
+                    </section>
                 </section>
 
                 <section>
@@ -73,16 +146,6 @@
                     </section>
                     <section class="answer-page">
                         <div class="answer">省</div>
-                    </section>
-                </section>
-
-                <section>
-                    <section class="question-page">
-                        <div class="question">A 罩杯</div>
-                        <div class="hint">猜一地名</div>
-                    </section>
-                    <section class="answer-page">
-                        <div class="answer">太平</div>
                     </section>
                 </section>
 
@@ -134,6 +197,17 @@
                     <section class="answer-page">
                         <div class="answer">足爽</div>
                     </section>
+                </section>
+
+                <section class="question-page" data-background="green">
+                    <div class="age">3</div>
+                    <div class="question">這一頁是綠色嗎？</div>
+                </section>
+
+                <section class="question-page">
+                    <div class="age">3</div>
+                    <div class="question" style="font-size: 8em; color: orange;">▲</div>
+                    <div class="question">這是什麼型狀？</div>
                 </section>
 
                 <section>
@@ -196,6 +270,7 @@
 
                 <section>
                     <section class="question-page">
+                       <div class="age">12</div>
                         <div class="question">舌頭砍掉了</div>
                         <div class="hint">猜一字</div>
                     </section>
@@ -210,7 +285,7 @@
                         <div class="hint">猜一字</div>
                     </section>
                     <section class="answer-page">
-                        <div class="answer">百</div>
+                        <div class="answer">白</div>
                     </section>
                 </section>
 
@@ -224,9 +299,14 @@
                     </section>
                 </section>
 
+                <section class="question-page">
+                    <div class="age">3</div>
+                    <div class="question">這一頁是綠色嗎？</div>
+                </section>
+
                 <section>
                     <section class="question-page">
-                        <div class="question">只要一叫它的名字就會被壞掉的東西是什麼？</div>
+                        <div class="question">只要一叫它的名字就會被破壞掉的東西是什麼？</div>
                     </section>
                     <section class="answer-page">
                         <div class="answer">沉默</div>
@@ -243,8 +323,199 @@
                     </section>
                 </section>
 
-            </div>
+                <section>
+                    <section class="question-page">
+                        <div class="question">正月沒有初一</div>
+                        <div class="hint">猜一字</div>
+                    </section>
+                    <section class="answer-page">
+                        <div class="answer">肯</div>
+                    </section>
+                </section>
 
+                <section>
+                    <section class="question-page">
+                        <div class="question">促膝談心</div>
+                        <div class="hint">猜一物理名詞</div>
+                    </section>
+                    <section class="answer-page">
+                        <div class="answer">相對論</div>
+                    </section>
+                </section>
+
+                <section>
+                    <section class="question-page">
+                        <div class="question">冰山血案</div>
+                        <div class="hint">猜一台語歌名</div>
+                    </section>
+                    <section class="answer-page">
+                        <div class="answer">雪中紅</div>
+                    </section>
+                </section>
+
+                <section>
+                    <section class="question-page">
+                        <div class="question">十六兩多一點</div>
+                        <div class="hint">猜一字</div>
+                    </section>
+                    <section class="answer-page">
+                        <div class="answer">斥</div>
+                    </section>
+                </section>
+
+                <section>
+                    <section class="question-page">
+                        <div class="question">白公公背黑豆，<br/>一路走，一路漏</div>
+                        <div class="hint">猜一動物</div>
+                    </section>
+                    <section class="answer-page">
+                        <div class="answer">羊</div>
+                    </section>
+                </section>
+
+               <section>
+                    <section class="question-page">
+                        <div class="age">5</div>
+                        <div class="question" style="color: red;">
+                            <i class="fa fa-apple"></i>
+                            <i class="fa fa-apple"></i>
+                            <i class="fa fa-apple"></i>
+                            <i class="fa fa-apple"></i>
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            <i class="fa fa-apple"></i>
+                        </div>
+                        <div class="question">有幾顆蘋果呢？</div>
+                    </section>
+                    <section class="answer-page">
+                        <div class="answer">5</div>
+                    </section>
+                </section>
+
+                <section>
+                    <section class="question-page">
+                        <div class="question">欲言又止</div>
+                        <div class="hint">猜一字</div>
+                    </section>
+                    <section class="answer-page">
+                        <div class="answer">認</div>
+                    </section>
+                </section>
+
+                <section>
+                    <section class="question-page">
+                        <div class="age">12</div>
+                        <div class="question">真丟人</div>
+                        <div class="hint">猜一字</div>
+                    </section>
+                    <section class="answer-page">
+                        <div class="answer">直</div>
+                    </section>
+                </section>
+
+
+                <section>
+                    <section class="question-page">
+                        <div class="question">玉皇大帝他娘</div>
+                        <div class="hint">猜一地名</div>
+                    </section>
+                    <section class="answer-page">
+                        <div class="answer">天母</div>
+                    </section>
+                </section>
+
+                <section>
+                    <section class="question-page">
+                        <div class="question">君子之交</div>
+                        <div class="hint">猜一地名</div>
+                    </section>
+                    <section class="answer-page">
+                        <div class="answer">淡水</div>
+                    </section>
+                </section>
+
+                <section>
+                    <section class="question-page">
+                        <div class="question">外國人洗澡</div>
+                        <div class="hint">猜一食物</div>
+                    </section>
+                    <section class="answer-page">
+                        <div class="answer">涮羊肉</div>
+                    </section>
+                </section>
+
+                <section>
+                    <section class="question-page">
+                        <div class="age">7</div>
+                        <div class="question">頭上兩根鬚，身穿花花衣，飛進花朵裡，撲粉又吃蜜</div>
+                        <div class="hint">猜一動物</div>
+                    </section>
+                    <section class="answer-page">
+                        <div class="answer">蝴蝶</div>
+                    </section>
+                </section>
+
+                <section>
+                    <section class="question-page">
+                        <div class="question">香蕉的通病</div>
+                        <div class="hint">猜醫學名詞</div>
+                    </section>
+                    <section class="answer-page">
+                        <div class="answer">脊椎側彎</div>
+                    </section>
+                </section>
+
+                <section>
+                    <section class="question-page">
+                        <div class="question">臺灣最大的湖</div>
+                        <div class="hint">猜一地名</div>
+                    </section>
+                    <section class="answer-page">
+                        <div class="answer">澎湖</div>
+                    </section>
+                </section>
+
+                <section>
+                    <section class="question-page">
+                        <div class="question">哪種人不能到加油站上班？</div>
+                        <div class="hint">猜成語</div>
+                    </section>
+                    <section class="answer-page">
+                        <div class="answer">油腔滑調</div>
+                    </section>
+                </section>
+
+                <section>
+                    <section class="question-page">
+                        <div class="age">12</div>
+                        <div class="question">兩根香腸兩瓶酒</div>
+                        <div class="hint">猜成語</div>
+                    </section>
+                    <section class="answer-page">
+                        <div class="answer">長長久久</div>
+                    </section>
+                </section>
+
+                <section>
+                    <section class="question-page">
+                        <div class="question">乞丐搬佛趕廟公</div>
+                        <div class="hint">猜成語</div>
+                    </section>
+                    <section class="answer-page">
+                        <div class="answer">出神入化</div>
+                    </section>
+                </section>
+
+
+                <section>
+                    <section class="question-page">
+                        <div class="question">不平凡的結果</div>
+                        <div class="hint">猜一水果</div>
+                    </section>
+                    <section class="answer-page">
+                        <div class="answer">奇異果</div>
+                    </section>
+                </section>
+            </div>
         </div>
 
         <script src="lib/js/head.min.js"></script>
